@@ -5,6 +5,7 @@
     padding:0;
     box-sizing:border-box;
     
+    
 }
 /*firmatting for header section*/
 header{
@@ -408,6 +409,9 @@ position:relative;
     width:100vw;
     display:flex;
     overflow:hidden;
+    flex-wrap:wrap;
+   gap:15px;
+    align-items:center;
     background-color:rgba(239, 241, 199, 0.1);
 
 }
@@ -419,7 +423,7 @@ position:relative;
  align-items:center;
 }
 .container4--image img{
-height:40vh;
+height:36vh;
 margin-top:50px;
 margin-left:20px;
 margin-bottom:50px;
@@ -438,7 +442,7 @@ margin-bottom:50px;
     margin-right:5px;
 }
 .container4--content-info{
-    width:50vw;
+    width:40vw;
 }
 .container4--content-info h1
 {
@@ -452,7 +456,7 @@ margin-bottom:50px;
  
   position:relative;
    margin-bottom:10px;
-   width:50vw;
+   width:40vw;
 }
 .container4--content-input #u-email
 {
@@ -485,10 +489,10 @@ margin-bottom:50px;
 .container4--content-images
 { margin-top:10px;
     display:flex;
-    
+    flex-wrap:wrap;
     align-items:center;
     gap:25px;
-    width:50vw;
+    width:40vw;
 }
 .container4 .logo
 {
@@ -497,7 +501,7 @@ margin-bottom:50px;
 }
 .container4--content-images img{
     margin-top:10px;
-    height:46px;
+    height:40px;
 }
 
 .container5 
@@ -531,6 +535,7 @@ font-weight:600;
     margin-bottom:10px;
 }
 .container6{
+    background:rgb(252, 248, 248);
     width:100vw;
     display:flex;
     justify-content:center;
@@ -565,19 +570,39 @@ footer .india
 {
     border:1px solid black;
     border-radius:5px;
-    padding:10px;
+    padding:5px;
+}
+footer .india img
+{
+    padding-right:2px;
+    padding-top:5px;
 }
 footer .english
 {border:1px solid black;
     border-radius:5px;
-    padding:10px;
+    padding:4px;
 
+}
+.english img{
+    padding-top:5px;
+    padding-right:2px;
+}
+.fa-brandss
+{
+    background:black;
+    border-radius:100%;
+    padding:4px;
+    color:white;
+    font-size:13px;
+    margin-left:5px;
+    margin-right:5px;
 }
 .footer--container2
 {
     display:grid;
-    grid-template-columns:repeat(5,1fr);
+    grid-template-columns:repeat(auto-fill,minmax(150px,1fr));
     grid-template-rows:1fr;
+    width:80vw;
     
 }
 .footer--container2 p{
@@ -599,6 +624,7 @@ footer .enterprise
 {
 padding:10px;
 margin-bottom:20px;
+color:gray;
 }
 .footer--container1 img{
     height:25px;
